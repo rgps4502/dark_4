@@ -8,6 +8,7 @@ __pycache__/
 
 #.env
 *.dark_4
+simple.yml
 
 # Distribution / packaging
 .Python
