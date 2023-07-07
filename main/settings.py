@@ -16,7 +16,7 @@ except:
 if data:
     DB_HOST = data['DATABASES']['HOST']
 else:
-    DB_HOST = 'locolhost'
+    DB_HOST = '127.0.0.1'
 
 SECRET_KEY = '19*1)4aat-sw!w-qlochb-qhm0c9+-al5s*(3m55j=$!466xil'
 
