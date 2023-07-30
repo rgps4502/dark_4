@@ -4,15 +4,16 @@ from base.basemodel import BaseModel
 
 
 class CommoDityModel(BaseModel):
-    commo_type = models.CharField(max_length=50, verbose_name="種類")
 
-    seller = models.CharField(max_length=50, verbose_name="賣家")
+    commo_type = models.CharField(max_length=50,default='', verbose_name="種類")
 
-    rarity = models.CharField(max_length=50, verbose_name="稀有度")
+    seller = models.CharField(max_length=50,default='', verbose_name="賣家")
+
+    rarity = models.CharField(max_length=50,default='', verbose_name="稀有度")
 
     commo_money = models.IntegerField(verbose_name="商品金額")
 
-
+    ability = models.CharField(max_length=50,default='',verbose_name="能力") 
 
 
     def __str__(self):
