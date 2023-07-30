@@ -20,4 +20,4 @@ class JSONResponse(HttpResponse):
     def commdity_list(self):
         commdity_list = CommoDityModel.objects.all()
         commdity_serializer = CommoDitySerializer(instance=commdity_list,many=True)
-        return JSONResponse(commdity_serializer.data)
+        return JSONResponse({'result':commdity_serializer.data})
